@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  input{
+   font-size:30px;
+   font-weight:300;
+   padding:10px;
+   }
+  </style>
+  <script language="javascript">
+function SelectRedirect(){
+
+switch(document.getElementById('s1').value)
+{
+case "Volunteer":
+window.location="volunteer.html";
+break;
+
+case "Teaching Staff":
+window.location="teaching.html";
+break;
+
+}
+</script>
+</head>
+<body style="background-image: url(helping-hands-nepal.jpg);width:100%;height:auto;">
+<br>
+<h1 style="font-family:verdana;text-align:center;font-size:60px;font-weight:500;">SERVE</h1><br>
+ <h4 style="font-family:verdana;text-align:center;"><center>
+ <select class="form-control" name="Branch" style="width:400px;height:50px;font-size:30px;font-weight:400">
+ <option value="West Godavari">West Godavari</option>
+ <option value="East Godavari">East Godavari</option>
+</select>
+  <br>
+  <br>
+  <select id ="s1" class="form-control" onChange="SelectRedirect(); name="login" style="width:400px;height:50px;font-size:30px;font-weight:400">
+ <option value="Volunteer">Volunteer</option>
+ <option value="Teaching Staff">Teaching Staff</option>
+</select>
+  <br>
+  <br>
+</center>
+</h4>
+ </body>
+</html>

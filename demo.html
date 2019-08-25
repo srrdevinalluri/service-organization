@@ -1,0 +1,61 @@
+
+<html>
+<head>
+<title>Demo of page redirection after selection of a drop down listbox menu</title>
+<style>
+
+SELECT{
+
+}
+</style>
+<script language="javascript">
+function SelectRedirect(){
+// ON selection of section this function will work
+//alert( document.getElementById('s1').value);
+
+switch(document.getElementById('s1').value)
+{
+case "Volunteer":
+window.location="volunteer.html";
+break;
+
+case "Teaching Staff":
+window.location="teaching.html";
+break;
+
+default:
+window.location="../"; 
+break;
+}// end of switch 
+}
+////////////////// 
+</script>
+</head>
+<body style="background-image: url(helping-hands-nepal.jpg);width:100%;height:auto;">
+<br>
+<center><h1>SERVE ORGANISATION</h1></center>
+
+<SELECT NAME="section" style="position:absolute;
+top:20%;
+left:40%;
+padding:10px;
+margin-bottom:20px;
+font-size:30px;">
+<Option value="">Branch</option>
+<Option value="West-Godavari">West-Godavari</option>
+<Option value="East-Godavari">East-Godavari</option>
+</SELECT>
+<br>
+<SELECT id="s1" NAME="section" onChange="SelectRedirect();" style="position:absolute;
+top:35%;
+left:40%;
+padding:10px;
+font-size:30px;">
+<Option value="">Login As</option>
+<Option value="Volunteer">Volunteer</option>
+<Option value="Teaching Staff">Teaching Staff</option>
+</SELECT>
+
+
+</body>
+</html> 

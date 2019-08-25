@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Volunteer Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+  </style>
+</head>
+<body style="background-image: url(helping-hands-nepal.jpg);width:100%;height:auto;">
+
+<div class="container">
+  <center><h2>Volunteer Form</h2></center><br>
+  <form class="form-horizontal" action="/action_page.php">
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="text" placeholder="Enter Name" name="name">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="phno">Ph No:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="ph" placeholder="Enter phno" name="phno">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="dob">DOB:</label>
+      <div class="col-sm-10">          
+        <input type="date" class="form-control" id="dob" placeholder="dd-mm-yyyy" name="dob">
+      </div>
+    </div>
+	<div class="form-group" style="position:absolute;left:19%;">
+      <label for="Languagesanguages Known">Languages Known</label>
+      <select class="form-control" id="languages Known">
+        <option>TELUGU</option>
+        <option>HINDI</option>
+        <option>ENGLISH</option>
+        <option>TAMIL</option>
+      </select>
+	  </div>
+	  
+	  <div class="form-group"  style="position:absolute;left:19%;top:52%;">
+	<h4 style="font-weight:bold;">Gender: </h4>
+	 <div class="radio">	 
+      <label><input type="radio" name="optradio">Male</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Female</label>
+    </div>
+     </div>
+    <div class="form-group" style="position:absolute;left:19%;top:70%;">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <a href="submitted.html" class="button">SUBMIT</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
